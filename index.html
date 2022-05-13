@@ -11,21 +11,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- BOOTSTRAP -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Budget Calculator</title>
 </head>
 <body>
-    <input type="text" id="expense">
-    <button onclick="addExpense()">+</button>
+    
+    <input type="text" id="expense-to-add">
+    <button id="add-expense" onclick="addExpense()">+</button>
     <br>
 
     Contents:
     <br>
-    <div id="container">
-
+    <div id="container-all-expenses">
+        <!-- contains dynamically added input fields from js function -->
     </div>
+    
     <button onclick="calculate()">Calculate</button>
+    <button onclick="clearContainer()">Clear</button>
     <br>
-    <div>Total: <span id="total">-</span></div>
+    <div>Total: <span id="total">0</span></div>
 </body>
 </html>
